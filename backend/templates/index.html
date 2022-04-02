@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <title>Google Based ChatBot</title>
+</head>
+<body>
+    <img class="chatbotImage" src="../static/assets/images/chatbot.png" />
+    <span id="chatbotOutput" class="chatbotOutput">{{ msg | safe}}</span>
+    <form method="post" action="/" style="text-align: center">
+        <input id="chatbotInput" name="chatbotInput" class="chatbotInput" />
+        <button type="submit">Send Message</button>
+    </form>
+</body>
+</html>
