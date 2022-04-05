@@ -48,7 +48,7 @@ const Home = () => {
                 <div>
                     <div >
                         <Typography variant="subtitle1" component="p">
-                            {result}
+                            <div dangerouslySetInnerHTML={{__html: result}} />
                         </Typography>
                     </div>
                     <form onSubmit={handleFormSubmit}>

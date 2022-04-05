@@ -65,7 +65,7 @@ class ChatBot:
             data = google.google_search(query=user_input)
 
             for d in data:
-                msg = "%s: %s" % (d.title, d.url)
+                msg = "<p>%s: <a href='%s' target='_blank'>Click Here</a></p>" % (d.title, d.url)
                 result = result + msg + "\n"
 
             return result
