@@ -1,7 +1,7 @@
 # ChatBot-Quaesitor
 It is a application that interacts with users through texts over a web page.It is provided with a basic template of queries which are searched through it’s internal data and if not available then it searches over  web server and provides the user with all relevant solutions.
 
-[chatbotquaesitor-output](https://user-images.githubusercontent.com/63039217/161959552-3b5ce249-ad1a-44b5-9e0a-e7ecaf67b7d2.png)
+![chatbotquaesitor-output](https://user-images.githubusercontent.com/63039217/161959552-3b5ce249-ad1a-44b5-9e0a-e7ecaf67b7d2.png)
 
 
 ## Technology Stack
