@@ -1,4 +1,5 @@
 import re
+from unicodedata import name
 from modules.chatbot import long_responses as long
 from modules.google_search import google_search as google
 
@@ -43,6 +44,8 @@ class ChatBot:
         response('I\'m doing fine, and you?', ['how', 'are', 'you', 'doing'])
         response('You\'re welcome!', ['thank', 'thanks'], single_response=True)
         response('Thank you!', ['i', 'love', 'code', 'palace'], required_words=['code', 'palace'])
+        response('My Name is Quaesitor', ['what', 'is', 'your', 'name'])
+        response('My name is a latin word.It means a seeker,a person who is attempting to find or obtain something.', ['what', 'is', 'the', 'meaning', 'of', 'your', 'name', 'Name'])
 
         # Longer responses
         response(long.R_ADVICE, ['give', 'advice'], required_words=['advice'])
@@ -58,7 +61,7 @@ class ChatBot:
     def get_response(self, user_input):
         split_message = re.split(r'\s+|[,;?!.-]\s*', user_input.lower())
         response = self.check_all_messages(split_message)
-
+         
         if response in long.responses:
             result = "Below you can find the google search results:\n"
 
